@@ -14,7 +14,7 @@ public class TripBooking {
     private int bill;
 
     @Enumerated(value = EnumType.STRING)
-    private TripStatus tripStatus;
+    private TripStatus status;
     @ManyToOne
     @JoinColumn
     private Driver driver;
@@ -78,12 +78,12 @@ public class TripBooking {
         this.bill = bill;
     }
 
-    public TripStatus getTripStatus() {
-        return tripStatus;
+    public TripStatus getStatus() {
+        return status;
     }
 
-    public void setTripStatus(TripStatus tripStatus) {
-        this.tripStatus = tripStatus;
+    public void setStatus(TripStatus status) {
+        this.status = status;
     }
 
     public Driver getDriver() {
